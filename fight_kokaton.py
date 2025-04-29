@@ -177,7 +177,7 @@ def main():
                 if beam is not None:
                     if beam.rct.colliderect(bomb.rct):#ビームと爆弾の衝突判定
                         beam = None #ビーム消す
-                        bomb[j] = None #ボム消す
+                        bombs[j] = None #ボム消す
                         bird.change_img(6, screen)#喜んでいるこうかとん画像
                 bombs =[bomb for bomb in bombs if bomb is not None]
 
