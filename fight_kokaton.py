@@ -25,6 +25,11 @@ def check_bound(obj_rct: pg.Rect) -> tuple[bool, bool]:
     return yoko, tate
 
 class Score:
+    """
+    init スコアの定義フォント、色、スコア初期値、表示する分、座標
+    update 色とbulit
+    
+    """
     def __init__(self):
         self.fonto = pg.font.SysFont("hgp創英角ﾎﾟｯﾌﾟ体", 30)#字体
         self.cloer = (255, 0, 0)                            #いろ
